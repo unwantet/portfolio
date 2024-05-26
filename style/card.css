@@ -9,17 +9,7 @@
     transition: all 1s ease-in-out;
   }
   
-  .background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(/public/projects/github%20searcher.png); /* Using %20 for space */
-    background-position: center;
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-}
+
 
   
   .logo {
