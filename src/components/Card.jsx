@@ -21,7 +21,7 @@ export default function Card({ project }) {
         ></div>
         <div class="logo">
           <div className="logo-svg flex items-center">
-            <img src={project.img} alt="" className="" />
+            <button className="text-white button">{project.title}</button>
           </div>
         </div>
         <a href={project.vercel} target="_blank" class="box box1">
