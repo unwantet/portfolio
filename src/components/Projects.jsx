@@ -16,6 +16,13 @@ const projects = [
         github: "https://github.com/unwantet/password-generator",
         description:'',
     },
+    {
+      title: "NEXT JS Dummy",
+      bgImg: "public/projects/next js dummy.png",
+      vercel: "https://next-js-dummy-sage.vercel.app/",
+      github: "https://github.com/unwantet/next.js-dummy",
+      description:'',
+  },
     
 ];
 
