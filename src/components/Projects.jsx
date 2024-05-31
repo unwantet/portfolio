@@ -1,32 +1,23 @@
+import { useState } from 'react';
 import Card from "./Card";
+import { useEffect } from "react";
 
-const projects = [
-  {
-    title: "GSearch",
-    bgImg: "/public/projects/githubsearcher.png",
-    vercel: "https://github-demo-io.vercel.app/",
-    github: "https://github.com/unwantet/github-searcher",
-    description:
-      "GitHub User Searcher - это инструмент, разработанный для быстрого и удобного поиска пользователей на платформе GitHub. Этот проект позволяет находить профили пользователей по различным критериям, таким как имя пользователя, репозитории и другая информация, доступная в профилях GitHub.",
-    },
-    {
-        title: "Password Generator",
-        bgImg: "public/projects/password.png",
-        vercel: "https://password-generator-betav1.vercel.app/",
-        github: "https://github.com/unwantet/password-generator",
-        description:'',
-    },
-    {
-      title: "NEXT JS Dummy",
-      bgImg: "public/projects/next js dummy.png",
-      vercel: "https://next-js-dummy-sage.vercel.app/",
-      github: "https://github.com/unwantet/next.js-dummy",
-      description:'',
-  },
-    
-];
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://online-json-server-api.up.railway.app/project/6659f86a4a1552ef80d177e8/projects")
+      .then((response) => response.json())
+      .then((data) => setProjects(data.data));
+      setIsLoading(false);
+  }, []);
+  if (isLoading) {
+    console.log("sasasa");
+  }
+
+  console.log(projects);
   return (
     <div className="flex flex-col-reverse items-center gap-10">
       {projects.map((project) => (
