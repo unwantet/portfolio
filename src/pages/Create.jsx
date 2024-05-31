@@ -38,7 +38,7 @@ function Create() {
   return (
     <div>
       <h1 className="text-3xl text-center font-bold mb-10">
-        Create New Recipie
+        Create New Project
       </h1>
 
       <form className="flex items-center flex-col gap-5 " onSubmit={handleSubmit}>
