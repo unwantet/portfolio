@@ -5,7 +5,7 @@ import Dropdown from "./Dropdown";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 mb-20 align-content">
+      <div className="navbar bg-base-100 mb-20 align-content px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="">

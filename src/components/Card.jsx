@@ -4,7 +4,7 @@ import "../../style/card.css";
 export default function Card({ project }) {
   return (
     <>
-      <div class="card">
+      <div class="card " >
         <div
           className="background"
           style={{
