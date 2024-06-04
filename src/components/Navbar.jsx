@@ -34,7 +34,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">Demo Portfolio</a>
+          <a className="btn btn-ghost text-xl">Unwantet's Portfolio</a>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
